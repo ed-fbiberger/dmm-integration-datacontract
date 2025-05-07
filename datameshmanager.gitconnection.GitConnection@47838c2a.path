@@ -1,0 +1,20 @@
+dataContractSpecification: 1.1.0
+id: order-service-online
+info:
+  title: Order Service Online API
+  version: 1.0.0
+  description: acme.orders
+  status: active
+  owner: sales-team
+  contact:
+    name: Scarlett Layton
+    email: scarlett.layton@demo4OH8794gsA1S7tFCbEFHxy.datamesh-manager.com
+terms:
+  usage: Max. 10x queries per day
+  limitations: Not suitable for real-time use cases
+  billing: $1000 / month
+  noticePeriod: P3M
+tags:
+  - popular
+  - updated
+  - iaddedstuff
