@@ -3,7 +3,7 @@ id: order-service-online
 info:
   title: Order Service Online API
   version: 1.0.0
-  description: acme.orders
+  description: acme.orders2
   status: active
   owner: sales-team
   contact:
@@ -15,6 +15,6 @@ terms:
   billing: $1000 / month
   noticePeriod: P3M
 tags:
-  - popular
-  - updated
-  - icanpushnow
+- popular
+- updated
+- icanpushnow
