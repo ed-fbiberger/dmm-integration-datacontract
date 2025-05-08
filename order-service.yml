@@ -3,7 +3,7 @@ id: order-service-online
 info:
   title: Order Service Online API
   version: 1.0.0
-  description: acme.orders8
+  description: acme.orders11
   status: active
   owner: sales-team
   contact:
