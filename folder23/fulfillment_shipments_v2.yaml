@@ -1,7 +1,7 @@
 apiVersion: v3.0.0
 kind: DataContract
 id: fulfillment_shipments_v2
-name: Shipments v2
+name: Shipments v2 blame
 version: 2.0.0
 status: draft
 tenant: company-A
