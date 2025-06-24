@@ -1,8 +1,8 @@
 apiVersion: v3.0.0
 kind: DataContract
 id: fulfillment_shipments_v2
-name: Shipments v2 blame
-version: 2.0.0
+name: Shipments v2 unblame
+version: 2.1.0
 status: draft
 tenant: company-A
 tags:
@@ -28,7 +28,6 @@ schema:
   physicalName: shipments_v2
   businessName: Shipments
   description: "This table contains shipment data, including details about shipment IDs, associated orders, delivery dates, carriers, tracking numbers, statuses, and additional shipment information in JSON format."
-  dataGranularityDescription: Not Aggregated
   tags:
   - pii
   quality:
@@ -59,9 +58,12 @@ schema:
       url: http://localhost:8888/demo302297915546/definitions/fulfillment/shipment_id
   - name: order_id
     physicalName: oid
+    required: false
+    unique: false
     physicalType: text
     primaryKey: false
     partitioned: false
+    criticalDataElement: false
     authoritativeDefinitions:
     - type: definition
       url: http://localhost:8888/demo302297915546/definitions/sales/order_id
@@ -144,8 +146,12 @@ schema:
     logicalType: object
     description: Shipping address details.
     required: true
+    unique: false
     physicalType: JSON
+    primaryKey: false
+    partitioned: false
     classification: restricted
+    criticalDataElement: false
     properties:
     - name: street
       businessName: Street
