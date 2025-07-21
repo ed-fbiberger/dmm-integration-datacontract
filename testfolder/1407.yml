@@ -60,3 +60,6 @@ examples:
     110,Emily Martin,emily.martin@example.com,555-999-8888,888 Maple Rd,2023-07-28T21:40:45Z
 tags:
 - popular
+servicelevels:
+  availability:
+    description: Contains Author Name
