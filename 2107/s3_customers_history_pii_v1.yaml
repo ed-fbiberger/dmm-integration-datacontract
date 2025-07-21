@@ -1,7 +1,7 @@
 dataContractSpecification: 1.1.0
 id: s3_customers_history_pii_v1
 info:
-  title: Customers History !!
+  title: Customers History !!!
   version: 1.0.4
   description: "All customer states, updated on every modifying event. PII included."
   status: active
