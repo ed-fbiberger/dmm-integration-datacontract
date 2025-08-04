@@ -1,0 +1,195 @@
+apiVersion: v3.0.1
+kind: DataContract
+id: demo-data-contract
+name: Demo data contract
+version: 0.1.0
+status: proposed
+customProperties:
+- property: owner
+  value: marketing
+description:
+  purpose: For internal and audit purposes
+  limitations: Does not include PII informations
+  usage: An agreement to share data for audit purposes
+  authoritativeDefinitions:
+  - type: Privacy sratement
+    url: https://example.com
+price:
+  priceAmount: 54466
+  priceCurrency: USD
+  priceUnit: MB
+slaDefaultElement: "TRANSACATIONS.ADRESS, TRANSACTIONS.DATE"
+slaProperties:
+- property: Validity
+  value: 92
+- property: Accuracy
+  value: 95
+servers:
+- server: production
+  type: snowflake
+  description: snowflake production server
+  environment: Snowflake_TM_DPX
+  account: wv03539.us-east-2.aws
+  database: TM_DPX_DB
+  host: wv03539.us-east-2.aws.snowflakecomputing.com
+  port: 443
+  schema: TM_DPX
+  warehouse: DPX_WH
+- server: Snowflake_PATIENTPOPULATIONDATA
+  type: snowflake
+  description: Snowflake_TM_DPX
+  environment: production
+  account: wv03539.us-east-2.aws
+  database: TM_DPX_DB
+  host: wv03539.us-east-2.aws.snowflakecomputing.com
+  port: 443
+  schema: PATIENTPOPULATIONDATA
+  warehouse: DPX_WH
+schema:
+- name: TRANSACTIONS
+  logicalType: object
+  physicalName: TRANSACTIONS
+  description: TRANSACTIONS
+  properties:
+  - name: STEP
+    logicalType: number
+    description: STEP
+    required: false
+    unique: false
+    physicalType: decimal
+    primaryKey: false
+    partitioned: false
+    partitionKeyPosition: -1
+    criticalDataElement: false
+  - name: TYPE
+    logicalType: string
+    description: TYPE
+    required: false
+    unique: false
+    physicalType: varchar
+    primaryKey: false
+    partitioned: false
+    partitionKeyPosition: -1
+    criticalDataElement: false
+  - name: AMOUNT
+    logicalType: number
+    description: AMOUNT
+    required: false
+    unique: false
+    physicalType: decimal
+    primaryKey: false
+    partitioned: false
+    partitionKeyPosition: -1
+    criticalDataElement: false
+  - name: NAMEORIG
+    logicalType: string
+    description: NAMEORIG
+    required: false
+    unique: false
+    physicalType: varchar
+    primaryKey: false
+    partitioned: false
+    partitionKeyPosition: -1
+    criticalDataElement: false
+- name: CONDITIONS
+  logicalType: object
+  physicalName: CONDITIONS
+  properties:
+  - name: START
+    logicalType: date
+    description: START
+    required: false
+    unique: false
+    physicalType: date
+    primaryKey: false
+    partitioned: false
+    partitionKeyPosition: -1
+    criticalDataElement: false
+  - name: STOP
+    logicalType: date
+    description: STOP
+    required: false
+    unique: false
+    physicalType: date
+    primaryKey: false
+    partitioned: false
+    partitionKeyPosition: -1
+    criticalDataElement: false
+  - name: PATIENT
+    logicalType: string
+    description: PATIENT
+    required: false
+    unique: false
+    physicalType: varchar
+    primaryKey: false
+    partitioned: false
+    partitionKeyPosition: -1
+    criticalDataElement: false
+  - name: ENCOUNTER
+    logicalType: string
+    description: ENCOUNTER
+    required: false
+    unique: false
+    physicalType: varchar
+    primaryKey: false
+    partitioned: false
+    partitionKeyPosition: -1
+    criticalDataElement: false
+  - name: CODE
+    logicalType: string
+    description: CODE
+    required: false
+    unique: false
+    physicalType: varchar
+    primaryKey: false
+    partitioned: false
+    partitionKeyPosition: -1
+    criticalDataElement: false
+  - name: DESCRIPTION
+    logicalType: string
+    description: DESCRIPTION
+    required: false
+    unique: false
+    physicalType: varchar
+    primaryKey: false
+    partitioned: false
+    partitionKeyPosition: -1
+    criticalDataElement: false
+- logicalType: object
+  properties:
+  - required: false
+    unique: false
+    primaryKey: false
+    partitioned: false
+    partitionKeyPosition: -1
+    criticalDataElement: false
+  - required: false
+    unique: false
+    primaryKey: false
+    partitioned: false
+    partitionKeyPosition: -1
+    criticalDataElement: false
+  - required: false
+    unique: false
+    primaryKey: false
+    partitioned: false
+    partitionKeyPosition: -1
+    criticalDataElement: false
+  - required: false
+    unique: false
+    primaryKey: false
+    partitioned: false
+    partitionKeyPosition: -1
+    criticalDataElement: false
+  - required: false
+    unique: false
+    primaryKey: false
+    partitioned: false
+    partitionKeyPosition: -1
+    criticalDataElement: false
+  - required: false
+    unique: false
+    primaryKey: false
+    partitioned: false
+    partitionKeyPosition: -1
+    criticalDataElement: false
