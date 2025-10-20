@@ -1,51 +1,51 @@
-dataContractSpecification: 1.1.0
-id: snowflake_articles_latest
+dataContractSpecification: "1.1.0"
+id: "snowflake_articles_latest"
 info:
-  title: Articles
-  version: 1.0.2
-  description: Current state of all articles
-  status: active
-  owner: products
+  title: "Articles3"
+  version: "1.0.2"
+  description: "Current state of all articles"
+  status: "active"
+  owner: "products"
   contact:
-    name: Gordie Stuart
-    email: gordie.stuart@demoTHTvoRKjjhGo8CmVLjE3f.datamesh-manager.com
+    name: "Gordie Stuart"
+    email: "gordie.stuart@demoTHTvoRKjjhGo8CmVLjE3f.datamesh-manager.com"
 terms:
-  usage: Max. 10x queries per day
-  limitations: Not suitable for real-time use cases
-  billing: $1000 / month
-  noticePeriod: P3M
+  usage: "Max. 10x queries per day"
+  limitations: "Not suitable for real-time use cases"
+  billing: "$1000 / month"
+  noticePeriod: "P3M"
 models:
   ARTICLES:
-    description: Articles
-    title: Articles
+    description: "Articles"
+    title: "Articles"
     fields:
       SKU:
-        $ref: http://localhost:8888/demo170461908334/definitions/fulfillment/sku
+        $ref: "http://localhost:8888/demo170461908334/definitions/fulfillment/sku"
         required: true
         primaryKey: true
         unique: true
       NAME:
-        type: text
-        description: The name of the article
+        type: "text"
+        description: "The name of the article"
         pii: false
       COLOR:
-        type: text
-        description: The color of the article
+        type: "text"
+        description: "The color of the article"
         pii: false
       BRAND_NAME:
-        type: text
-        description: The brand of the article
+        type: "text"
+        description: "The brand of the article"
         pii: false
       LAST_UPDATED_TIMESTAMP:
-        $ref: http://localhost:8888/demo170461908334/definitions/global/actual_timestamp
+        $ref: "http://localhost:8888/demo170461908334/definitions/global/actual_timestamp"
         required: true
       PROCESS_TIMESTAMP:
-        $ref: http://localhost:8888/demo170461908334/definitions/global/processed_timestamp
+        $ref: "http://localhost:8888/demo170461908334/definitions/global/processed_timestamp"
         required: true
 examples:
-- type: csv
-  model: ARTICLES
-  description: my description
+- type: "csv"
+  model: "ARTICLES"
+  description: "my description"
   data: |-
     SKU,NAME,COLOR,BRAND_NAME,LAST_UPDATED_TIMESTAMP,PROCESS_TIMESTAMP
     "SKU1234","Men's T-Shirt","Blue","BrandX","2023-07-28 09:15:00","2023-07-28 09:17:30"
