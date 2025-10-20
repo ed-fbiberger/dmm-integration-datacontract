@@ -12,7 +12,7 @@ info:
 terms:
   usage: "Max. 10x queries per day"
   limitations: "Not suitable for real-time use cases"
-  billing: "$1000 / month"
+  billing: "$1000 / month2"
   noticePeriod: "P3M"
 models:
   ARTICLES:
