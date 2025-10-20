@@ -17,7 +17,7 @@ terms:
 models:
   ARTICLES:
     description: Articles
-    title: Articles
+    title: Articles in Snowflake
     fields:
       SKU:
         $ref: http://localhost:8888/demo170461908334/definitions/fulfillment/sku
