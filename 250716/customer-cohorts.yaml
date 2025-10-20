@@ -1,0 +1,56 @@
+dataContractSpecification: 1.1.0
+id: customer-cohorts
+info:
+  title: Customer Cohorts
+  version: 1.0.0
+  description: A table with customer cohorts and their properties
+  status: active
+  owner: marketing
+  contact:
+    name: Justice Sukie
+    email: justice.sukie@demo5jGf8I0v7bMRIU33qRdaY2.datamesh-manager.com
+terms:
+  usage: Max. 10x queries per day
+  limitations: Not suitable for real-time use cases
+  billing: $1000 / month
+  noticePeriod: P3M
+models:
+  customer_cohorts:
+    description: Table containing customer cohorts information.
+    title: Customer Cohorts
+    fields:
+      customer_id:
+        $ref: http://localhost:8888/demo170461908334/definitions/sales/customer_id
+        required: true
+      cohort_id:
+        type: string
+        description: Identifier for the cohort the customer belongs to.
+        required: true
+      cohort_name:
+        type: string
+        description: Name of the cohort.
+      start_date:
+        type: date
+        description: Start date of the cohort.
+      end_date:
+        type: date
+        description: End date of the cohort.
+      description:
+        type: string
+        description: Additional description or notes about the cohort.
+examples:
+- type: csv
+  model: customer_cohorts
+  description: my description
+  data: |-
+    customer_id,cohort_id,cohort_name,start_date,end_date,description
+    101,1,Cohort A,2023-01-01,2023-06-30,First-time customers in H1 2023
+    102,2,Cohort B,2023-02-01,2023-07-31,Returning customers in H1 2023
+    103,1,Cohort A,2023-01-01,2023-06-30,First-time customers in H1 2023
+    104,3,Cohort C,2023-03-01,2023-08-31,New customers in H1 2023
+    105,2,Cohort B,2023-02-01,2023-07-31,Returning customers in H1 2023
+    106,4,Cohort D,2023-04-01,2023-09-30,High-value customers in H1 2023
+    107,3,Cohort C,2023-03-01,2023-08-31,New customers in H1 2023
+    108,5,Cohort E,2023-05-01,2023-10-31,Loyal customers in H1 2023
+    109,6,Cohort F,2023-06-01,2023-11-30,Inactive customers in H1 2023
+    110,4,Cohort D,2023-04-01,2023-09-30,High-value customers in H1 2023

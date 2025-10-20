@@ -1,9 +1,9 @@
 dataContractSpecification: 1.1.0
-id: order-service-online
+id: order-service
 info:
-  title: Order Service Online API 2
+  title: Order Service API
   version: 1.0.0
-  description: acme.orders11qq
+  description: acme.orders
   status: active
   owner: sales-team
   contact:
@@ -16,8 +16,3 @@ terms:
   noticePeriod: P3M
 tags:
 - popular
-- updated
-- icanpushnow
-- update
-- update2
-- update3
