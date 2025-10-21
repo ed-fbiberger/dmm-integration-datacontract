@@ -1,7 +1,7 @@
 dataContractSpecification: "1.1.0"
 id: "snowflake_articles_latest"
 info:
-  title: "Articles32"
+  title: "Articles321"
   version: "1.0.2"
   description: "Current state of all articles"
   status: "active"
