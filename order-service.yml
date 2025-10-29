@@ -1,23 +1,23 @@
-dataContractSpecification: 1.1.0
-id: order-service-online
+dataContractSpecification: "1.1.0"
+id: "order-service-online"
 info:
-  title: Order Service Online API 2
-  version: 1.0.0
-  description: acme.orders11qq
-  status: active
-  owner: sales-team
+  title: "Order Service Online API 3"
+  version: "1.0.0"
+  description: "acme.orders11qq"
+  status: "active"
+  owner: "sales-team"
   contact:
-    name: Scarlett Layton
-    email: scarlett.layton@demo4OH8794gsA1S7tFCbEFHxy.datamesh-manager.com
+    name: "Scarlett Layton"
+    email: "scarlett.layton@demo4OH8794gsA1S7tFCbEFHxy.datamesh-manager.com"
 terms:
-  usage: Max. 10x queries per day
-  limitations: Not suitable for real-time use cases
-  billing: $1000 / month
-  noticePeriod: P3M
+  usage: "Max. 10x queries per day"
+  limitations: "Not suitable for real-time use cases"
+  billing: "$1000 / month"
+  noticePeriod: "P3M"
 tags:
-- popular
-- updated
-- icanpushnow
-- update
-- update2
-- update3
+- "popular"
+- "updated"
+- "icanpushnow"
+- "update"
+- "update2"
+- "update3"
