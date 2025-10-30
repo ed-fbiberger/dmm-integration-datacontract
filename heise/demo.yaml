@@ -1,7 +1,7 @@
 dataContractSpecification: "1.1.0"
 id: "snowflake_articles_history"
 info:
-  title: "Articles History updated"
+  title: "Articles History updated 2"
   version: "1.0.0"
   description: "All article snapshots since 2020"
   status: "active"
