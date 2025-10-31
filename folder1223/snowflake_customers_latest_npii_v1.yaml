@@ -1,7 +1,7 @@
 dataContractSpecification: "1.1.0"
 id: "snowflake_customers_latest_npii_v1"
 info:
-  title: "Customers Latest NPII"
+  title: "Customers Latest NPII!"
   version: "1.0.0"
   description: "All customers in their latest state, PII removed."
   status: "active"
