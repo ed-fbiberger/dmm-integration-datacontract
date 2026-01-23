@@ -4,6 +4,7 @@ id: orders-contract
 name: Orders Data Contract
 version: 1.0.0
 status: active
+owner: sales-team
 description:
   purpose: Orders data for analytics and reporting
   limitations: Daily batch updates only
