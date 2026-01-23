@@ -4,7 +4,11 @@ id: orders-contract
 name: Orders Data Contract
 version: 1.0.0
 status: active
-owner: sales-team
+team:
+  name: products
+  members:
+    - username: gordie.stuart@demoTHTvoRKjjhGo8CmVLjE3f.datamesh-manager.com
+      role: contact
 description:
   purpose: Orders data for analytics and reporting
   limitations: Daily batch updates only
