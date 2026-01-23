@@ -1,0 +1,55 @@
+apiVersion: v2.2.0
+kind: DataContract
+id: orders-contract
+name: Orders Data Contract
+version: 1.0.0
+status: active
+description:
+  purpose: Orders data for analytics and reporting
+  limitations: Daily batch updates only
+  usage: Internal analytics team usage
+schema:
+  - name: orders
+    physicalName: order_table  # Physical name overrides logical name
+    logicalType: table
+    physicalType: table
+    description: Customer orders information
+    properties:
+      - name: order_id
+        physicalName: ord_id  # Physical name overrides logical name
+        logicalType: string
+        physicalType: varchar(50)
+        description: Unique order identifier
+        primaryKey: true
+      - name: customer_id
+        logicalType: string
+        physicalType: varchar(50)
+        description: Customer identifier
+      - name: order_date
+        physicalName: ord_date
+        logicalType: date
+        physicalType: timestamp
+        description: Date when order was placed
+      - name: total_amount
+        logicalType: decimal
+        physicalType: decimal(10,2)
+        description: Total order amount
+  - name: customers
+    logicalType: table
+    physicalType: table
+    description: Customer information
+    properties:
+      - name: customer_id
+        physicalName: cust_id
+        logicalType: string
+        physicalType: varchar(50)
+        description: Unique customer identifier
+        primaryKey: true
+      - name: customer_name
+        logicalType: string
+        physicalType: varchar(255)
+        description: Customer full name
+      - name: email
+        logicalType: string
+        physicalType: varchar(255)
+        description: Customer email address
