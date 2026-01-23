@@ -1,60 +1,59 @@
-apiVersion: v2.2.0
-kind: DataContract
-id: orders-contract
-name: Orders Data Contract
-version: 1.0.0
-status: active
+apiVersion: "v2.2.0"
+kind: "DataContract"
+id: "orders-contract"
+name: "Orders Data Contract"
+version: "1.0.0"
+status: "active"
 team:
-  name: products
+  name: "products"
   members:
-    - username: gordie.stuart@demoTHTvoRKjjhGo8CmVLjE3f.datamesh-manager.com
-      role: contact
+  - username: "gordie.stuart@demoTHTvoRKjjhGo8CmVLjE3f.datamesh-manager.com"
+    role: "contact"
 description:
-  purpose: Orders data for analytics and reporting
-  limitations: Daily batch updates only
-  usage: Internal analytics team usage
+  purpose: "Orders data for analytics and reporting"
+  limitations: "Daily batch updates only"
+  usage: "Internal analytics team usage2"
 schema:
-  - name: orders
-    physicalName: order_table  # Physical name overrides logical name
-    logicalType: table
-    physicalType: table
-    description: Customer orders information
-    properties:
-      - name: order_id
-        physicalName: ord_id  # Physical name overrides logical name
-        logicalType: string
-        physicalType: varchar(50)
-        description: Unique order identifier
-        primaryKey: true
-      - name: customer_id
-        logicalType: string
-        physicalType: varchar(50)
-        description: Customer identifier
-      - name: order_date
-        physicalName: ord_date
-        logicalType: date
-        physicalType: timestamp
-        description: Date when order was placed
-      - name: total_amount
-        logicalType: decimal
-        physicalType: decimal(10,2)
-        description: Total order amount
-  - name: customers
-    logicalType: table
-    physicalType: table
-    description: Customer information
-    properties:
-      - name: customer_id
-        physicalName: cust_id
-        logicalType: string
-        physicalType: varchar(50)
-        description: Unique customer identifier
-        primaryKey: true
-      - name: customer_name
-        logicalType: string
-        physicalType: varchar(255)
-        description: Customer full name
-      - name: email
-        logicalType: string
-        physicalType: varchar(255)
-        description: Customer email address
+- name: "orders"
+  logicalType: "table"
+  physicalType: "table"
+  physicalName: "order_table"
+  description: "Customer orders information"
+  properties:
+  - name: "order_id"
+    physicalName: "ord_id"
+    logicalType: "string"
+    description: "Unique order identifier"
+    physicalType: "varchar(50)"
+    primaryKey: true
+  - name: "customer_id"
+    logicalType: "string"
+    description: "Customer identifier"
+    physicalType: "varchar(50)"
+  - name: "order_date"
+    physicalName: "ord_date"
+    logicalType: "date"
+    description: "Date when order was placed"
+    physicalType: "timestamp"
+  - name: "total_amount"
+    description: "Total order amount"
+    physicalType: "decimal(10,2)"
+- name: "customers"
+  logicalType: "table"
+  physicalType: "table"
+  description: "Customer information"
+  properties:
+  - name: "customer_id"
+    physicalName: "cust_id"
+    logicalType: "string"
+    description: "Unique customer identifier"
+    physicalType: "varchar(50)"
+    primaryKey: true
+  - name: "customer_name"
+    logicalType: "string"
+    description: "Customer full name"
+    physicalType: "varchar(255)"
+  - name: "email"
+    logicalType: "string"
+    description: "Customer email address"
+    physicalType: "varchar(255)"
