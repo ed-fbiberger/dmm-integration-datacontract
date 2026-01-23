@@ -12,7 +12,7 @@ team:
 description:
   purpose: "Orders data for analytics and reporting"
   limitations: "Daily batch updates only"
-  usage: "Internal analytics team usage2"
+  usage: "Internal analytics team usage23"
 schema:
 - name: "orders"
   logicalType: "table"
