@@ -1,0 +1,6 @@
+apiVerison: "v3.1.0"
+kind: "DataContract"
+id: "example-id"
+version: "0.0.1"
+status: "draft"
+name: "Example Data Contract"
