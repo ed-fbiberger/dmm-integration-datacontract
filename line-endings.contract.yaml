@@ -1,8 +1,10 @@
 apiVerison: "v3.1.0"
 kind: "DataContract"
-id: "example-id"
+id: "example-id2"
 version: "0.0.1"
 status: "draft"
 name: "Example Data Contract"
 team:
   name: "sales-team"
+tenant: "sometenant2"
+description: {}
