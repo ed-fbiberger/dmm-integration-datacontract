@@ -4,3 +4,5 @@ id: "example-id"
 version: "0.0.1"
 status: "draft"
 name: "Example Data Contract"
+team:
+  name: "sales-team"
